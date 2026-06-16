@@ -6,8 +6,8 @@ WIP
 Docker Desktop with Kubernetes enabled, kubectl
 
 ## Deploy
-`cd k8s
-kubectl apply -f ./ -R`
+`cd k8s`
+`kubectl apply -f ./ -R`
 
 ## Access
 kubectl proxy
@@ -28,5 +28,6 @@ Flask backend with /metrics endpoint
 
 ## Backend
     To build docker image
-    `docker build -t  bysdudent/flask-backend:0.1 .`   
+
+`docker build -t  bysdudent/flask-backend:0.1 .`   
 
