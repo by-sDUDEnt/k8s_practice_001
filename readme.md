@@ -20,7 +20,12 @@ http://localhost:8001/api/v1/namespaces/default/services/nginx-svc/proxy/
 
 
 ## Roadmap
+- [x] Backend Development
+- [ ] Backend Deployment
+- [ ] Front-End Development
+- [ ] Front-End Deployment
 - [ ] Prometheus + Grafana monitoring
+- [ ] .gitignore and .dockerignore
 
 
 # App
