@@ -29,7 +29,8 @@ WIP
 Flask backend with /metrics endpoint
 
 ## Backend
-    To build docker image
+To build docker image:
+
 ```bash
 docker build -t  bysdudent/flask-backend:0.1 .
 ```
