@@ -13,6 +13,8 @@ spec:
     metadata:
       labels:
         app: backend
+      annotations:
+        prometheus.io/scrape: "true"
     spec:
       containers:
       - name: backend-flask
