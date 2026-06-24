@@ -5,26 +5,26 @@ WIP
 ## Prerequisites
 Docker Desktop with Kubernetes enabled, kubectl
 
-## Deploy
+## Deploy 
 ```bash
 cd k8s
 kubectl apply -f ./ -R
 ```
 
 ## Access
-kubectl proxy
+kubectl portforward <service-name> <port>:<port>
 
 Then open:
-http://localhost:8001/api/v1/namespaces/default/services/nginx-svc/proxy/
-
+http://localhost:<port>/
 
 
 ## Roadmap
 - [x] Backend Development
-- [ ] Backend Deployment
+- [x] Backend Deployment
 - [ ] Front-End Development
 - [ ] Front-End Deployment
-- [ ] Prometheus + Grafana monitoring
+- [x] Prometheus 
+  [ ] Grafana monitoring
 - [ ] .gitignore and .dockerignore
 
 
