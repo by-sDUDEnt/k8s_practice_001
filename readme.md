@@ -20,11 +20,11 @@ http://localhost:<port>/
 
 
 ## Roadmap
-- [x] Backend Development
-- [x] Backend Deployment
+- ✅ Backend Development
+- ✅ Backend Deployment
 - [ ] Front-End Development
 - [ ] Front-End Deployment
-- [x] Prometheus 
+- ✅ Prometheus 
   [ ] Grafana monitoring
 - [ ] .gitignore and .dockerignore
 
