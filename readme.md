@@ -12,8 +12,9 @@ kubectl apply -f ./ -R
 ```
 
 ## Access
+```bash
 kubectl portforward <service-name> <port>:<port>
-
+```
 Then open:
 http://localhost:<port>/
 
