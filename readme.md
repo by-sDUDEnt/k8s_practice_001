@@ -22,10 +22,10 @@ http://localhost:<port>/
 ## Roadmap
 - ✅ Backend Development
 - ✅ Backend Deployment
-- [ ] Front-End Development
-- [ ] Front-End Deployment
+- ✅ Front-End Development
+- ✅ Front-End Deployment
 - ✅ Prometheus 
-  [ ] Grafana monitoring
+- ✅ Grafana monitoring
 - [ ] .gitignore and .dockerignore
 
 
