@@ -1,1 +1,4 @@
-Dockerfile
+.env
+*.pyc
+__pycache__/
+.git
