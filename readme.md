@@ -26,7 +26,12 @@ http://localhost:<port>/
 - ✅ Front-End Deployment
 - ✅ Prometheus 
 - ✅ Grafana monitoring
-- [ ] .gitignore and .dockerignore
+- ✅ .gitignore and .dockerignore
+- [ ] Convert to Helm charts
+- [ ] CI/CD
+- [ ] Persistance storage
+- [ ] Autoscaling
+- [ ] Flask healthchecks
 
 
 
