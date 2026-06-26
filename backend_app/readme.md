@@ -5,4 +5,7 @@ To build docker image:
 docker build -t  bysdudent/flask-backend:0.2 .
 ```
 
-
+## To run locally with test OS envs (Windows):
+```bash
+$env:POD_NAME="test-pod"; $env:NODE_NAME="test-node"; $env:POD_IP="192.168.1.1"; python app.py
+```
