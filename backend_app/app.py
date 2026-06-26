@@ -23,10 +23,12 @@ def pod_info():
     pod_name = os.environ.get("POD_NAME")
     node_name = os.environ.get("NODE_NAME")
     pod_ip = os.environ.get("POD_IP")
+    namespace = os.environ.get("NAMESPACE") 
     return jsonify({
     "pod_name": pod_name,
     "node_name": node_name,
-    "pod_ip": pod_ip
+    "pod_ip": pod_ip,
+    "namespace": namespace
     })
 
 

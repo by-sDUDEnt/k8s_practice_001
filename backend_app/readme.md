@@ -10,5 +10,5 @@ docker push bysdudent/flask-backend:latest
 
 ## To run locally with test OS envs (Windows):
 ```bash
-$env:POD_NAME="test-pod"; $env:NODE_NAME="test-node"; $env:POD_IP="192.168.1.1"; python app.py
+$env:POD_NAME="test-pod"; $env:NODE_NAME="test-node"; $env:POD_IP="192.168.1.1"; $env:NAMESPACE="default-test";python app.py
 ```
