@@ -4,6 +4,8 @@ on:
   push:
     branches: 
       - 'feature/**'
+    paths: 
+      - 'backend_app/**'
   pull_request:
     branches:
       - 'feature/**'
