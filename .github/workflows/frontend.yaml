@@ -1,0 +1,36 @@
+name: Fronted Docker Image CI for feature/ branches
+
+on:
+  push:
+    branches: 
+      - 'feature/**'
+  pull_request:
+    branches:
+      - 'feature/**'
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Login to DockerHub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+    - name: Short SHA
+      run:  echo "SHORT_SHA=$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_ENV
+
+    - name: Build and push Docker image
+      uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
+      with:
+        context: ./frontend_app/
+        file: ./frontend_app/Dockerfile
+        push: true
+        tags: bysdudent/nginx-frontend:${{ env.SHORT_SHA }}
+        
