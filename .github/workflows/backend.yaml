@@ -25,7 +25,8 @@ jobs:
     - name: Ruff linter
       uses: astral-sh/ruff-action@v4.0.0
       with:
-         src: "./backend_app"
+          src: "./backend_app"
+          version: "0.15.20"
 
     - name: Login to DockerHub
       uses: docker/login-action@v3
