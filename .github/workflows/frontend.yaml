@@ -6,7 +6,7 @@ on:
       - 'feature/**'
     paths: 
       - 'frontend_app/**'
-      - '.github/workflows/frontend.yml'
+      - '.github/workflows/frontend.yaml'
   pull_request:
     branches:
       - 'feature/**'
