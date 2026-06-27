@@ -1,0 +1,3 @@
+[tool.ruff]
+required-version = ">=0.15.20"
+line-length = 88
