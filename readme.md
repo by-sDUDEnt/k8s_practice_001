@@ -6,11 +6,9 @@ WIP
 Docker Desktop with Kubernetes enabled, kubectl
 
 ## Deploy 
-```bash
-cd k8s
-kubectl apply -f ./k8s/ -R --server-side --force-conflicts
-```
-The --server-side and --force-conflicts is because of ArgoCD
+The `bootstrap_cluster.sh` contains commands to deploy the cluster. The need of one comes from deploying ArgoCD in the dedicated namespace `argocd`.
+The imperative nature will be fixed after introduction of kustomize. 
+For PowerShell (Windows) deploy - copy paste the commands.
 
 
 ## Access
