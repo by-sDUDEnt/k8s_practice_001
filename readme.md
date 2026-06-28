@@ -8,8 +8,10 @@ Docker Desktop with Kubernetes enabled, kubectl
 ## Deploy 
 ```bash
 cd k8s
-kubectl apply -f ./ -R
+kubectl apply -f ./k8s/ -R --server-side --force-conflicts
 ```
+The --server-side and --force-conflicts is because of ArgoCD
+
 
 ## Access
 ```bash
