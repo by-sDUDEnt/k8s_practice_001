@@ -4,12 +4,12 @@ on:
   push:
     branches: 
       - 'feature/**'
+      - 'main'
     paths: 
       - 'frontend_app/**'
       - '.github/workflows/frontend.yaml'
   pull_request:
     branches:
-      - 'feature/**'
       - 'main'
   workflow_dispatch:
 
