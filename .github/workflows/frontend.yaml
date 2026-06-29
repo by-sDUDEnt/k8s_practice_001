@@ -4,6 +4,7 @@ on:
   push:
     branches: 
       - 'feature/**'
+      - 'main'
     paths: 
       - 'frontend_app/**'
       - '.github/workflows/frontend.yaml'

@@ -45,4 +45,6 @@ jobs:
         file: ./backend_app/Dockerfile
         push: true
         tags: bysdudent/flask-backend:${{ env.SHORT_SHA }}
-        
+
+    - name: Update imageTag
+      run :  yq -i '(.images[] | select(.name == "bysdudent/flask-backend") | .newTag) = "${{ env.SHORT_SHA }}"' kustomization.yaml
