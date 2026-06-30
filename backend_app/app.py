@@ -11,7 +11,7 @@ c = Counter('http_requests_on_root_page', 'Number of visits for main page')
 @app.route('/')
 def hello_world():
     c.inc()
-    return 'Hello World'
+    return 'Hello World!'
 
 
 @app.route('/metrics')
