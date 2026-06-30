@@ -5,4 +5,4 @@ resources:
   - service.yaml
 images:
   - name: bysdudent/flask-backend
-    newTag: "5c0139d"
+    newTag: "51ec796"
