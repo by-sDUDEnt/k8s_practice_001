@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: backend-app
+  labels:
+    team: frontend
+    release: prom-graf
+spec:
+  selector:
+    matchLabels:
+      app: backend1
+  endpoints:
+  - port: web
+    interval: 5s
